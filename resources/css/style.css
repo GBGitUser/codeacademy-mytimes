@@ -82,26 +82,32 @@ nav {
   display: flex;
   flex-direction: column;
   width: 630px;
-  height: 250px;
   background-color: blue;
 }
 
 .column_medium {
   display: flex;
+  flex-direction: column;
   width: 300px;
-  height: 250px;
   background-color: blue;
 }
 
 .column_small {
   display: flex;
+  flex-direction: column;
   width: 240px;
-  height: 250px;
   background-color: blue;
 }
 
 .item_title {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
   background-color: purple;
+}
+
+.newsbites_title {
+  text-transform: uppercase;
 }
 
 .item_body {
