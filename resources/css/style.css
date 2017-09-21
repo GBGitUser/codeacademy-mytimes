@@ -37,7 +37,6 @@ header .spacer {
   align-items: center;
   justify-content: flex-start;
   width: 50%;
-  border: 1px solid black;
 }
 
 .logo img {
@@ -75,26 +74,27 @@ nav {
 .container {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 
 .column_large {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
   width: 630px;
-  background-color: blue;
 }
 
 .column_medium {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
   width: 300px;
   background-color: blue;
 }
 
 .column_small {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   width: 240px;
   background-color: blue;
 }
@@ -131,7 +131,6 @@ nav {
 
 /*** News Stories ***/
 .story_body {
-  background-color: teal;
   font-family: Georgia;
   font-size: 17px;
   color: black;
@@ -139,14 +138,27 @@ nav {
 }
 
 .story_headline {
-  display: block;
   font-size: 1.5em;
   font-weight: bold;
   padding: 20px 0;
 }
 
-
-
 .newsbites_title {
   text-transform: uppercase;
+}
+
+.story_left {
+  width: 300px;
+}
+
+.story_middle {
+  width: 300px;
+}
+
+.story_right {
+  width: 240px;
+}
+
+.story_main {
+  width: 630px;
 }
